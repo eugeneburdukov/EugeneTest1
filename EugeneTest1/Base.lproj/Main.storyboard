@@ -143,7 +143,7 @@
             </objects>
             <point key="canvasLocation" x="-1341" y="-257"/>
         </scene>
-        <!--Examine-->
+        <!--Quiz-->
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="EugeneTest1" customModuleProvider="target" sceneMemberID="viewController">
@@ -164,7 +164,7 @@
                             <constraint firstItem="uW8-mp-VtJ" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="288" id="qvP-XL-Ikx"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Examine" image="character.book.closed.fill" catalog="system" id="lCV-O0-WSW"/>
+                    <tabBarItem key="tabBarItem" title="Quiz" image="character.book.closed.fill" catalog="system" id="lCV-O0-WSW"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
