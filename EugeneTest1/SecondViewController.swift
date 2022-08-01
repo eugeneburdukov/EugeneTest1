@@ -10,54 +10,27 @@ import AVFoundation
 
 class SecondViewController: UIViewController {
     
-    var audioPlayer = AVAudioPlayer()
-    
     @IBOutlet weak var ImageView: UIImageView!
     
     @IBOutlet weak var backButton: UIButton!
     
     @IBOutlet weak var nextButton: UIButton!
     
+    @IBOutlet weak var playButton: UIButton!
+    
     var imageInt = 1
     
-//    var soundInt = ""
-//
-//    let sounds = ["a", "b", "c", "d", "e"]
+    var player: AVAudioPlayer?
+    
+    let sounds = ["a", "b", "c", "d", "e"]
 
     override func viewDidLoad() {
         super.viewDidLoad()
+
+        // Do any additional setup after loading the view.
         
         backButton.isEnabled = false
-        
-//        let sound = Bundle.main.path(forResource: "a", ofType: "mp3")
-//
-//
-//        do {
-//        // We try to get the initialize it with the URL we created above
-//            audioPlayer = try AVAudioPlayer(contentsOf: URL (fileURLWithPath: sound!) )
-//        }
-//        catch{
-//        // It will print any error.
-//        print (error)
-//        }
-        // Do any additional setup after loading the view.
     }
-    
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
-    
-//    @IBAction func playSoundButton(_ sender: UIButton) {
-//
-//        let audioPath = Bundle.main.path(forResource: "a", ofType: "mp3")
-//    }
     
     @IBAction func backButton(_ sender: UIButton) {
         imageInt = imageInt - 1
@@ -70,12 +43,41 @@ class SecondViewController: UIViewController {
                 self.lettersGallery()
     }
     
+    
+    @IBAction func playMusic() {
+        if let player = player, player.isPlaying {
+            
+        } else {
+            let urlString = Bundle.main.path(forResource: sounds[imageInt - 1], ofType: "mp3")
+            do{
+                try AVAudioSession.sharedInstance().setMode(.default)
+                try AVAudioSession.sharedInstance().setActive(true, options: .notifyOthersOnDeactivation)
+                
+                guard let urlString = urlString else {
+                    return
+                }
+                
+                player = try AVAudioPlayer(contentsOf: URL(fileURLWithPath: urlString))
+                
+                guard let player = player else {
+                    return
+                }
+                player.play()
+
+            }
+            catch {
+                print("something went wrong")
+            }
+        }
+    }
+    
     func lettersGallery() {
             if imageInt == 1 {
                 backButton.isEnabled = false
                 ImageView.image =  UIImage(named: "a.png")
             }
             if imageInt == 2 {
+                backButton.isEnabled = true
         
                 ImageView.image =  UIImage(named: "b.png")
             }

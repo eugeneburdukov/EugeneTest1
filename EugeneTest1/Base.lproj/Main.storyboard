@@ -38,6 +38,15 @@
                                     <action selector="backButton:" destination="GYK-Qx-PgR" eventType="touchUpInside" id="Beq-7r-75d"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="w2G-ZV-DY8">
+                                <rect key="frame" x="158" y="433" width="99" height="31"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Play"/>
+                                <connections>
+                                    <action selector="playMusic" destination="GYK-Qx-PgR" eventType="touchUpInside" id="T6i-av-f5k"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="RCl-rq-R8a"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -47,6 +56,7 @@
                         <outlet property="ImageView" destination="xeg-cL-T1g" id="CS2-0A-7e9"/>
                         <outlet property="backButton" destination="Y8Q-hU-UXz" id="NOl-kW-qbg"/>
                         <outlet property="nextButton" destination="ptb-4M-ds6" id="gGt-vd-EuN"/>
+                        <outlet property="playButton" destination="w2G-ZV-DY8" id="ALG-nA-Zie"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="sSZ-87-RdF" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
