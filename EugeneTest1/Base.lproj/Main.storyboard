@@ -42,7 +42,7 @@
                                 <rect key="frame" x="158" y="433" width="99" height="31"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="filled" title="Play"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Play &gt;"/>
                                 <connections>
                                     <action selector="playMusic" destination="GYK-Qx-PgR" eventType="touchUpInside" id="T6i-av-f5k"/>
                                 </connections>
