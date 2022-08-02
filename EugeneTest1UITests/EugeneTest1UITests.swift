@@ -22,11 +22,34 @@ class EugeneTest1UITests: XCTestCase {
         // Put teardown code here. This method is called after the invocation of each test method in the class.
     }
 
-    func testExample() throws {
+    func testEugene() throws {
         // UI tests must launch the application that they test.
         let app = XCUIApplication()
         app.launch()
+        
+        let tabBar = app.tabBars["Tab Bar"]
+        XCTAssertTrue(tabBar.exists)
+        
+        let buttonStudy = app.buttons["Study"]
+        app.tabBars["Tab Bar"].buttons["Study"].tap()
+        XCTAssertTrue(buttonStudy.exists)
+        
+        let nextButton = app.buttons["Next "]
+        nextButton.tap()
+        nextButton.tap()
+        nextButton.tap()
+        nextButton.tap()
+        
+        let backButton = app.buttons["Back"]
+        backButton.tap()
+        backButton.tap()
+        backButton.tap()
+        backButton.tap()
 
+        app.tabBars["Tab Bar"].buttons["About"].tap()
+                
+        
+        
         // Use XCTAssert and related functions to verify your tests produce the correct results.
     }
 
@@ -37,5 +60,14 @@ class EugeneTest1UITests: XCTestCase {
                 XCUIApplication().launch()
             }
         }
+    }
+    
+        func testExample1() throws {
+        // UI tests must launch the application that they test.
+        let app = XCUIApplication()
+        app.launch()
+        
+
+        // Use XCTAssert and related functions to verify your tests produce the correct results.
     }
 }

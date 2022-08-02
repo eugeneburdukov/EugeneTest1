@@ -24,7 +24,7 @@
                                 <rect key="frame" x="222" y="499" width="139" height="57"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="Next &gt;&gt;"/>
+                                <buttonConfiguration key="configuration" style="plain" image="arrowshape.zigzag.forward" catalog="system" title="Next "/>
                                 <connections>
                                     <action selector="nextButton:" destination="GYK-Qx-PgR" eventType="touchUpInside" id="Meb-aJ-8O6"/>
                                 </connections>
@@ -33,7 +33,7 @@
                                 <rect key="frame" x="54" y="499" width="139" height="57"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="&lt;&lt; Back"/>
+                                <buttonConfiguration key="configuration" style="plain" image="arrowshape.turn.up.backward.2" catalog="system" title="Back"/>
                                 <connections>
                                     <action selector="backButton:" destination="GYK-Qx-PgR" eventType="touchUpInside" id="Beq-7r-75d"/>
                                 </connections>
@@ -42,7 +42,7 @@
                                 <rect key="frame" x="158" y="433" width="99" height="31"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="filled" title="Play &gt;"/>
+                                <buttonConfiguration key="configuration" style="filled" image="tv.music.note.fill" catalog="system" title="Play"/>
                                 <connections>
                                     <action selector="playMusic" destination="GYK-Qx-PgR" eventType="touchUpInside" id="T6i-av-f5k"/>
                                 </connections>
@@ -175,11 +175,14 @@
         <image name="Image-1" width="328" height="328"/>
         <image name="Image-2" width="1666" height="1638"/>
         <image name="a" width="255" height="255"/>
+        <image name="arrowshape.turn.up.backward.2" catalog="system" width="128" height="86"/>
+        <image name="arrowshape.zigzag.forward" catalog="system" width="128" height="93"/>
         <image name="character.book.closed.fill" catalog="system" width="115" height="128"/>
         <image name="folder.fill.badge.person.crop" catalog="system" width="128" height="91"/>
         <image name="house" catalog="system" width="128" height="106"/>
         <image name="logo" width="328" height="149"/>
         <image name="pencil.slash" catalog="system" width="128" height="113"/>
+        <image name="tv.music.note.fill" catalog="system" width="128" height="97"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
