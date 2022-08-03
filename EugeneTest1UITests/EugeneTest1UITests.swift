@@ -45,8 +45,12 @@ class EugeneTest1UITests: XCTestCase {
         backButton.tap()
         backButton.tap()
         backButton.tap()
-
-        app.tabBars["Tab Bar"].buttons["About"].tap()
+        
+        if backButton.isEnabled{
+            app.tabBars["Tab Bar"].buttons["About"].tap()
+        } else {
+            app.tabBars["Tab Bar"].buttons["Home"].tap()
+        }
                 
         
         
