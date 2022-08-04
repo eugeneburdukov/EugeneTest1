@@ -92,6 +92,18 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		03DA4C55289B449D00D52400 /* soundsGroup */ = {
+			isa = PBXGroup;
+			children = (
+				03DA4C4D289B43BB00D52400 /* a.mp3 */,
+				03DA4C4C289B43BB00D52400 /* b.mp3 */,
+				03DA4C4B289B43BA00D52400 /* c.mp3 */,
+				03DA4C4E289B43BB00D52400 /* d.mp3 */,
+				03DA4C4F289B43BB00D52400 /* e.mp3 */,
+			);
+			path = soundsGroup;
+			sourceTree = "<group>";
+		};
 		03F8C6E928980EFE00C9A945 = {
 			isa = PBXGroup;
 			children = (
@@ -115,11 +127,7 @@
 		03F8C6F428980EFE00C9A945 /* EugeneTest1 */ = {
 			isa = PBXGroup;
 			children = (
-				03DA4C4D289B43BB00D52400 /* a.mp3 */,
-				03DA4C4C289B43BB00D52400 /* b.mp3 */,
-				03DA4C4B289B43BA00D52400 /* c.mp3 */,
-				03DA4C4E289B43BB00D52400 /* d.mp3 */,
-				03DA4C4F289B43BB00D52400 /* e.mp3 */,
+				03DA4C55289B449D00D52400 /* soundsGroup */,
 				03F8C6F528980EFE00C9A945 /* AppDelegate.swift */,
 				03F8C6F728980EFE00C9A945 /* SceneDelegate.swift */,
 				03F8C6F928980EFE00C9A945 /* ViewController.swift */,
