@@ -51,8 +51,6 @@ class EugeneTest1UITests: XCTestCase {
         } else {
             app.tabBars["Tab Bar"].buttons["Home"].tap()
         }
-                
-        
         
         // Use XCTAssert and related functions to verify your tests produce the correct results.
     }

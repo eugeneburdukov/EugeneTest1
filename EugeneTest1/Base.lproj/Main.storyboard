@@ -187,6 +187,9 @@
                                                 <rect key="frame" x="0.0" y="0.0" width="41.666666666666664" height="31"/>
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="filled" title="Aa"/>
+                                                <connections>
+                                                    <action selector="buttonFirst" destination="BYZ-38-t0r" eventType="touchUpInside" id="COK-kj-quY"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                     </stackView>
@@ -197,6 +200,9 @@
                                                 <rect key="frame" x="0.0" y="0.0" width="41.666666666666664" height="31"/>
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="filled" title="Bb"/>
+                                                <connections>
+                                                    <action selector="buttonSecond" destination="BYZ-38-t0r" eventType="touchUpInside" id="jjZ-8N-ngB"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                     </stackView>
@@ -207,6 +213,9 @@
                                                 <rect key="frame" x="0.0" y="0.0" width="41.666666666666664" height="31"/>
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="filled" title="Cc"/>
+                                                <connections>
+                                                    <action selector="buttonThird" destination="BYZ-38-t0r" eventType="touchUpInside" id="xSP-3T-hvb"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                     </stackView>

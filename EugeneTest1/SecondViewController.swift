@@ -36,13 +36,11 @@ class SecondViewController: UIViewController {
         imageInt = imageInt - 1
                 self.lettersGallery()
     }
-    
 
     @IBAction func nextButton(_ sender: UIButton) {
         imageInt = imageInt + 1
                 self.lettersGallery()
     }
-    
     
     @IBAction func playMusic() {
         if let player = player, player.isPlaying {
@@ -93,6 +91,5 @@ class SecondViewController: UIViewController {
                 backButton.isEnabled = true
                 ImageView.image =  UIImage(named: "e.png")
             }
-    
     }
 }
