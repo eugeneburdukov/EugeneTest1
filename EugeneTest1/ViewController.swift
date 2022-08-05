@@ -17,7 +17,20 @@ class ViewController: UIViewController {
     
     @IBOutlet weak var letterView: UIImageView!
     
+    @IBOutlet weak var rightLabel: UILabel!
+    
+    @IBOutlet weak var wrongLabel: UILabel!
+    
+    var correctAnswer: Int = 0
+    
+    var incorrectAnswer: Int = 0
+    
+    var position: Int = 0
+    
+    
     let images = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z"]
+    
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -28,38 +41,48 @@ class ViewController: UIViewController {
     
    
     @IBAction func buttonFirst() {
-        self.setLetter()
+        
+        if position == 1 {
+            self.setLetter()
+            correctAnswer += 1
+            self.rightLabel.text = String(correctAnswer)
+        } else {
+            self.setLetter()
+            incorrectAnswer += 1
+            self.wrongLabel.text = String(incorrectAnswer)
+        }
     }
     
     
     @IBAction func buttonSecond() {
-        self.setLetter()
+        if position == 2 {
+            self.setLetter()
+            correctAnswer += 1
+            self.rightLabel.text = String(correctAnswer)
+        } else {
+            self.setLetter()
+            incorrectAnswer += 1
+            self.wrongLabel.text = String(incorrectAnswer)
+        }
     }
     
     
     @IBAction func buttonThird() {
-        self.setLetter()
+        if position == 3 {
+            self.setLetter()
+            correctAnswer += 1
+            self.rightLabel.text = String(correctAnswer)
+        } else {
+            self.setLetter()
+            incorrectAnswer += 1
+            self.wrongLabel.text = String(incorrectAnswer)
+        }
     }
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
     
     func setLetter() {
         let abc = ["Aa", "Bb", "Cc", "Dd", "Ee", "Ff", "Gg", "Hh", "Ii", "Jj", "Kk", "Ll", "Mm", "Nn", "Oo", "Pp", "Qq", "Rr", "Ss", "Tt", "Uu", "Vv","Ww", "Xx", "Yy", "Zz"]
         var letters: Set<Int> = []
-        let position = Int.random(in: 1..<4)
+        position = Int.random(in: 1..<4)
         var index = 0
         repeat {
             index = Int.random(in: 1..<26);
@@ -98,9 +121,9 @@ class ViewController: UIViewController {
                 buttonTwo.setTitle(abc[index + 2], for: .normal);
             }
         default:
-            buttonOne.setTitle("X", for: .normal)
-            buttonTwo.setTitle("X", for: .normal)
-            buttonThree.setTitle("X", for: .normal)
+            buttonOne.setTitle("Err", for: .normal)
+            buttonTwo.setTitle("Err", for: .normal)
+            buttonThree.setTitle("Err", for: .normal)
         }
         
         letterView.image =  UIImage(named: images[index])

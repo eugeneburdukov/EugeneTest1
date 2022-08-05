@@ -266,6 +266,8 @@
                         <outlet property="buttonThree" destination="yGv-8B-jZ6" id="ZQj-4B-gNg"/>
                         <outlet property="buttonTwo" destination="voi-U4-CN1" id="Apy-ZC-Q65"/>
                         <outlet property="letterView" destination="uW8-mp-VtJ" id="mzh-XX-KMQ"/>
+                        <outlet property="rightLabel" destination="zaf-WU-lYh" id="jNi-kr-xpa"/>
+                        <outlet property="wrongLabel" destination="XaF-Q6-8me" id="VbR-9z-Bl0"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
