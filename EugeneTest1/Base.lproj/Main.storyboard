@@ -109,10 +109,47 @@
             </objects>
             <point key="canvasLocation" x="279" y="-75"/>
         </scene>
+        <!--Success View Controller-->
+        <scene sceneID="W3a-bf-252">
+            <objects>
+                <viewController storyboardIdentifier="SuccessStoryBoardID" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Ojf-dD-bkP" customClass="SuccessViewController" customModule="EugeneTest1" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="u7Y-39-Jfl">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="LnO-uo-fZ7">
+                                <rect key="frame" x="0.0" y="43" width="414" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <items>
+                                    <navigationItem title="Quiz is completed" id="cgJ-Ju-YKg"/>
+                                </items>
+                            </navigationBar>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="A6M-Hm-fZI">
+                                <rect key="frame" x="179" y="432.66666666666669" width="56" height="31"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Back"/>
+                                <connections>
+                                    <action selector="button" destination="Ojf-dD-bkP" eventType="touchUpInside" id="bYk-yX-a7s"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="Idh-PF-tkW"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="A6M-Hm-fZI" firstAttribute="centerX" secondItem="u7Y-39-Jfl" secondAttribute="centerX" id="66P-3G-Aiv"/>
+                            <constraint firstItem="A6M-Hm-fZI" firstAttribute="centerX" secondItem="u7Y-39-Jfl" secondAttribute="centerX" id="cGB-Fi-Ezq"/>
+                            <constraint firstItem="A6M-Hm-fZI" firstAttribute="centerY" secondItem="u7Y-39-Jfl" secondAttribute="centerY" id="d14-L9-dcg"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="YMX-4x-sDC" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1001" y="-181"/>
+        </scene>
         <!--Home-->
         <scene sceneID="rWW-h1-gWF">
             <objects>
-                <viewController id="uT5-Rz-9ia" customClass="FirstViewController" customModule="EugeneTest1" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="abcstoryboardid" id="uT5-Rz-9ia" customClass="FirstViewController" customModule="EugeneTest1" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="ZNk-x5-H04">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

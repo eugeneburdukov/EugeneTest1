@@ -61,6 +61,7 @@
 		039C30E8289C3BA0006644DD /* b.png in Resources */ = {isa = PBXBuildFile; fileRef = 039C30B2289C3BA0006644DD /* b.png */; };
 		039C30E9289C3BA0006644DD /* home.png in Resources */ = {isa = PBXBuildFile; fileRef = 039C30B3289C3BA0006644DD /* home.png */; };
 		039C30EA289C3BA0006644DD /* q.png in Resources */ = {isa = PBXBuildFile; fileRef = 039C30B4289C3BA0006644DD /* q.png */; };
+		039C30F0289D5EA2006644DD /* SuccessViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 039C30EF289D5EA2006644DD /* SuccessViewController.swift */; };
 		03DA4C50289B43BB00D52400 /* c.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 03DA4C4B289B43BA00D52400 /* c.mp3 */; };
 		03DA4C51289B43BB00D52400 /* b.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 03DA4C4C289B43BB00D52400 /* b.mp3 */; };
 		03DA4C52289B43BB00D52400 /* a.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 03DA4C4D289B43BB00D52400 /* a.mp3 */; };
@@ -152,6 +153,7 @@
 		039C30B2289C3BA0006644DD /* b.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = b.png; sourceTree = "<group>"; };
 		039C30B3289C3BA0006644DD /* home.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = home.png; sourceTree = "<group>"; };
 		039C30B4289C3BA0006644DD /* q.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = q.png; sourceTree = "<group>"; };
+		039C30EF289D5EA2006644DD /* SuccessViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuccessViewController.swift; sourceTree = "<group>"; };
 		03DA4C4B289B43BA00D52400 /* c.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = c.mp3; sourceTree = "<group>"; };
 		03DA4C4C289B43BB00D52400 /* b.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = b.mp3; sourceTree = "<group>"; };
 		03DA4C4D289B43BB00D52400 /* a.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = a.mp3; sourceTree = "<group>"; };
@@ -304,6 +306,7 @@
 				03F8C725289836BB00C9A945 /* FirstViewController.swift */,
 				03F8C727289836D400C9A945 /* SecondViewController.swift */,
 				03F8C729289836E700C9A945 /* ThirdViewController.swift */,
+				039C30EF289D5EA2006644DD /* SuccessViewController.swift */,
 				03F8C6FB28980EFE00C9A945 /* Main.storyboard */,
 				03F8C6FE28980F0000C9A945 /* Assets.xcassets */,
 				03F8C70028980F0000C9A945 /* LaunchScreen.storyboard */,
@@ -520,6 +523,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				03F8C6FA28980EFE00C9A945 /* ViewController.swift in Sources */,
+				039C30F0289D5EA2006644DD /* SuccessViewController.swift in Sources */,
 				03F8C6F628980EFE00C9A945 /* AppDelegate.swift in Sources */,
 				03F8C6F828980EFE00C9A945 /* SceneDelegate.swift in Sources */,
 				03F8C728289836D400C9A945 /* SecondViewController.swift in Sources */,

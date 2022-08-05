@@ -27,18 +27,13 @@ class ViewController: UIViewController {
     
     var position: Int = 0
     
-    
     let images = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z"]
-    
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
         self.setLetter()
     }
-    
-    
-    
    
     @IBAction func buttonFirst() {
         
@@ -51,6 +46,7 @@ class ViewController: UIViewController {
             incorrectAnswer += 1
             self.wrongLabel.text = String(incorrectAnswer)
         }
+        goToSuccessPage()
     }
     
     
@@ -64,6 +60,7 @@ class ViewController: UIViewController {
             incorrectAnswer += 1
             self.wrongLabel.text = String(incorrectAnswer)
         }
+        goToSuccessPage()
     }
     
     
@@ -77,6 +74,20 @@ class ViewController: UIViewController {
             incorrectAnswer += 1
             self.wrongLabel.text = String(incorrectAnswer)
         }
+        goToSuccessPage()
+    }
+    
+    func goToSuccessPage() {
+        if (correctAnswer + incorrectAnswer) == 10 {
+            goToNewView()
+        }
+    }
+    
+    func goToNewView() {
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        let controller = storyboard.instantiateViewController(withIdentifier: "SuccessStoryBoardID")
+        controller.modalPresentationStyle = .fullScreen
+        self.present(controller, animated: true, completion: nil)
     }
     
     func setLetter() {
