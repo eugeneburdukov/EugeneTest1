@@ -86,7 +86,7 @@ class ViewController: UIViewController {
     func goToNewView() {
         let storyboard = UIStoryboard(name: "Main", bundle: nil)
         let controller = storyboard.instantiateViewController(withIdentifier: "SuccessStoryBoardID")
-        controller.modalPresentationStyle = .fullScreen
+//        controller.modalPresentationStyle = .fullScreen
         self.present(controller, animated: true, completion: nil)
     }
     
